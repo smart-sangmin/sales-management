@@ -20,6 +20,7 @@ public class MonthlySales {
     private final VisitsPerHalfHourInterval visitsPerHalfHourInterval;
     private final YearMonth yearMonth;
     private final int totalSales;
+    private final int numberOfVisits;
     private final int averageDailySales;
     private final int averageCustomerUnitPrice;
 
@@ -31,7 +32,8 @@ public class MonthlySales {
         this.visitsPerHalfHourInterval = new VisitsPerHalfHourInterval(allVisitsInMonth);
         this.yearMonth = YearMonth.of(year, month);
         this.totalSales = VisitUtils.calculateTotalSales(allVisitsInMonth);
+        this.numberOfVisits = allVisitsInMonth.size();
         this.averageDailySales = MathUtils.roundTensPlace(totalSales, this.yearMonth.lengthOfMonth());
-        this.averageCustomerUnitPrice = MathUtils.roundTensPlace(totalSales, allVisitsInMonth.size());
+        this.averageCustomerUnitPrice = MathUtils.roundTensPlace(totalSales, numberOfVisits);
     }
 }
