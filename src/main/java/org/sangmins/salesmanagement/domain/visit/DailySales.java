@@ -14,7 +14,7 @@ public class DailySales {
     private final LocalDate date;
     private final DayOfWeek dayOfWeek;
     private final int totalSales;
-    private final int countVisits;
+    private final int numberOfVisits;
     private final int averageCustomerUnitPrice;
 
     public DailySales(LocalDate date, List<Visit> dailyVisits) {
@@ -22,7 +22,7 @@ public class DailySales {
         this.date = date;
         this.dayOfWeek = date.getDayOfWeek();
         this.totalSales = VisitUtils.calculateTotalSales(dailyVisits);
-        this.countVisits = dailyVisits.size();
-        this.averageCustomerUnitPrice = countVisits != 0 ? MathUtils.roundTensPlace(totalSales, countVisits) : 0;
+        this.numberOfVisits = dailyVisits.size();
+        this.averageCustomerUnitPrice = numberOfVisits != 0 ? MathUtils.roundTensPlace(totalSales, numberOfVisits) : 0;
     }
 }
