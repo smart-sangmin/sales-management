@@ -36,7 +36,6 @@ public final class VisitDtoMapper {
         return VisitResponse.builder()
                 .id(visit.getId())
                 .menu(visit.getMenu())
-                .menu(visit.getMenu())
                 .price(visit.getPrice())
                 .date(visit.getDate())
                 .description(visit.getDescription())
@@ -73,7 +72,6 @@ public final class VisitDtoMapper {
 
         VisitsPerHalfHourInterval visitsPerHalfHourInterval = monthlySales.getVisitsPerHalfHourInterval();
         VisitsPerHalfHourIntervalDto visitsPerHalfHourIntervalDto = VisitDtoMapper.toVisitsPerHalfHourIntervalDto(visitsPerHalfHourInterval);
-
 
         return MonthlySalesDto.builder()
                 .yearMonth(monthlySales.getYearMonth())
