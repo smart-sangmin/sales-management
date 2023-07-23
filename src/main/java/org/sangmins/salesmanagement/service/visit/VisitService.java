@@ -47,6 +47,10 @@ public class VisitService {
         );
     }
 
+    public void deleteVisit(Long id) {
+        visitJpaRepository.deleteById(id);
+    }
+
     public DailySalesDto getDailySalesInfo(LocalDate date) {
         List<Visit> dailyVisits = visitJpaRepository.findAllByDate(date);
         DailySales dailySales = new DailySales(date, dailyVisits);
@@ -57,9 +61,5 @@ public class VisitService {
         List<Visit> allVisitsInMount = visitJpaRepository.findAllByYearAndMonth(year, month);
         MonthlySales monthlySales = new MonthlySales(allVisitsInMount, year, month);
         return VisitDtoMapper.toMonthlySalesDto(monthlySales);
-    }
-
-    public void deleteVisit(Long id) {
-        visitJpaRepository.deleteById(id);
     }
 }
