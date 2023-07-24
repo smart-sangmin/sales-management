@@ -1,0 +1,14 @@
+### 방문생성
+POST http://localhost:8080/api/visit
+Content-Type: application/json
+
+{
+  "menu": "PERM",
+  "price": 200000,
+  "date": "2023-09-30",
+  "duration": {
+    "startAt": "11:00:00",
+    "endAt": "15:30:00"
+  },
+  "description": "좋은 손님"
+}

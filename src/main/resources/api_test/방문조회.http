@@ -1,0 +1,2 @@
+### 방문조회
+GET http://localhost:8080/api/visit/1

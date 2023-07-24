@@ -1,0 +1,2 @@
+### 방문삭제
+DELETE http://localhost:8080/api/visit/1
