@@ -18,7 +18,7 @@ INSERT INTO visit (menu, price, date, description, start_at, end_at)
 VALUES ('DRY', 1000, '2023-10-01', '좋은 손님', '19:00', '20:00');
 
 
--- 10-03
+-- 10-02
 INSERT INTO visit (menu, price, date, description, start_at, end_at)
 VALUES ('CLINIC', 100000, '2023-10-02', '좋은 손님', '10:30', '11:30');
 
@@ -119,43 +119,26 @@ VALUES ('DRY', 12000, '2023-10-07', '좋은 손님', '16:00', '19:00');
 
 -- 10-08
 INSERT INTO visit (menu, price, date, description, start_at, end_at)
-VALUES ('PERM', 56000, '2023-12-31', '좋은 손님', '10:30', '11:00');
+VALUES ('PERM', 56000, '2023-10-08', '좋은 손님', '10:30', '11:00');
 
 INSERT INTO visit (menu, price, date, description, start_at, end_at)
-VALUES ('DRY', 12000, '2023-12-31', '좋은 손님', '10:45', '11:00');
+VALUES ('DRY', 12000, '2023-10-08', '좋은 손님', '10:45', '11:00');
 
 
 -- 10-09
 INSERT INTO visit (menu, price, date, description, start_at, end_at)
-VALUES ('DRY', 12000, '2023-12-31', '좋은 손님', '10:30', '11:00');
+VALUES ('DRY', 12000, '2023-10-09', '좋은 손님', '10:30', '11:00');
 
 INSERT INTO visit (menu, price, date, description, start_at, end_at)
-VALUES ('DRY', 12000, '2023-12-31', '좋은 손님', '10:45', '11:00');
+VALUES ('DRY', 12000, '2023-10-09', '좋은 손님', '10:45', '11:00');
 
 
--- 10-07
+-- 10-10
 INSERT INTO visit (menu, price, date, description, start_at, end_at)
-VALUES ('DRY', 12000, '2023-12-31', '좋은 손님', '10:30', '11:00');
-
-INSERT INTO visit (menu, price, date, description, start_at, end_at)
-VALUES ('DRY', 12000, '2023-12-31', '좋은 손님', '10:45', '11:00');
-
-
--- 09-30
-INSERT INTO visit (menu, price, date, description, start_at, end_at)
-VALUES ('CLINIC', 1000, '2023-09-30', '좋은 손님', '10:30', '11:30');
+VALUES ('CLINIC', 1000, '2023-10-10', '좋은 손님', '10:30', '11:30');
 
 INSERT INTO visit (menu, price, date, description, start_at, end_at)
-VALUES ('CUT', 5000, '2023-09-30', '나쁜 손님, 토네이도 컷', '11:30', '12:30');
+VALUES ('CUT', 5000, '2023-10-10', '나쁜 손님, 토네이도 컷', '11:30', '12:30');
 
 INSERT INTO visit (menu, price, date, description, start_at, end_at)
-VALUES ('PERM', 100000, '2023-09-30', '좋은 손님', '13:50', '15:30');
-
-INSERT INTO visit (menu, price, date, description, start_at, end_at)
-VALUES ('COLOR', 40000, '2023-09-30', '좋은 손님, 뿌염', '16:00', '18:30');
-
-INSERT INTO visit (menu, price, date, description, start_at, end_at)
-VALUES ('ETC', 100000, '2023-09-30', '좋은 손님, 염색 + 샴푸 사감', '17:30', '19:30');
-
-INSERT INTO visit (menu, price, date, description, start_at, end_at)
-VALUES ('DRY', 1000, '2023-09-30', '좋은 손님', '19:00', '20:00');
+VALUES ('PERM', 100000, '2023-10-10', '좋은 손님', '13:50', '15:30');
